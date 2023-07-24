@@ -1,0 +1,289 @@
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+hr {
+    width: 80%;
+}
+#head {
+    padding: 30px 30px 0 30px;
+    background-color: #690fad;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+    header {
+        text-align: left;
+    }
+        #contact {
+            position: relative;
+            bottom: 20px;
+        }
+            #contact h1 {
+                font-size: 25px;
+            }
+            #contact span {
+                font-size: 80%;
+                color: rgb(230, 230, 230);
+            }
+            img#mail {
+                position: relative;
+                top: 5px;
+            }
+            img#phone {
+                position: relative;
+                top: 2px;
+                left: 3px;
+            }
+        
+    nav {
+        width: 40%;
+    }
+        nav ul {
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+            nav li {
+                list-style-type: none;
+                color: rgb(230, 230, 230);
+            }
+            nav li:hover {
+                color: white;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: inherit;
+            }
+#aboutme {
+    display: flex;
+    height: 400px;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+}
+    #my_image {
+        box-sizing: border-box;
+        padding: 50px;
+        height: 100%;
+        width: 30%;
+    }
+        #my_image img {
+            height: 100%;
+            width: 100%;
+        }
+    #info {
+        box-sizing: border-box;
+        padding: 50px;
+        height: 100%;
+        width: 70%;
+        position: relative;
+        bottom: 15px;
+    }
+        #info h1 {
+            font-size: 40px;
+            color: #690fad;
+        }
+        #info img {
+            width: 40px;
+        }
+        #info p {
+            color: rgb(130, 130, 130);
+            height: 200px;
+            font-weight: bold;
+            line-height: 20px;
+            position: relative;
+            bottom: 20px;
+            overflow: auto;
+        }
+
+#container {
+    margin: 35px;
+}
+    #container h1 {
+        font-size: 40px;
+        color: #690fad;
+    }
+    #grid{
+        width: 80%;
+        height: 400px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 80px;
+        row-gap: 80px;
+    }
+        .gridItem{
+            box-shadow: 1px 1px 6px 1px gray;
+            border-radius: 5px;
+        }
+        .gridItem div {
+            box-sizing: border-box;
+            width: 100%;
+            height: 33%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .course {
+            font-size: 12px;
+            font-weight: bolder;
+        }
+        .experience {
+            font-weight: bold;
+        }
+        .gridItem .skill_img {
+            box-sizing: border-box;
+            padding: 10px;
+            margin: auto;
+            width: 30%;
+        }
+        .gridItem div img {
+            width: 100%;
+            height: 100%;
+        }
+
+#projects {
+    color: black;
+}
+    #projects div {
+        width: 90%;
+        margin: auto;
+    }
+    #projects span {
+        color: inherit;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #projects li {
+        color: inherit;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+#recommendations {
+    color: black;
+    width: 100%;
+}
+    #recommendations h1 {
+        margin: 0;
+    }
+    
+    div#flex {
+        box-sizing: border-box;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        height: 150px;
+        width: 90%;
+        flex-grow: 3;
+        overflow-x: auto;
+    }
+    #recommendations p {
+        box-sizing: border-box;
+        border: 2px solid rgb(189, 186, 186);
+        flex-shrink: 0;
+        font-size: 14px;
+        color: rgb(50, 46, 46);
+        padding: 14px;
+        margin: 0 10px 0 0;
+        height: 100%;
+        width: 32%;
+        border-radius: 10px;
+        overflow: auto;
+        text-align: justify;
+    }
+    #userRecommend {
+        box-sizing: border-box;
+        padding: 70px;
+    }
+    fieldset {
+        border: none;
+        margin: auto;
+    }
+    fieldset h1 {
+        color: black !important;
+        font-size: 30px !important;
+    }
+    #optional {
+        width: 90%;
+    }
+    #message {
+        width: 90%;
+    }
+    #submit {
+        display: block;
+        margin: auto;
+        background-color: white;
+        border: 1px solid #690fad;
+        border-radius: 5px;
+        color: #690fad;
+        font-weight: bold;
+        width: 140px;
+        height: 40px;
+    }
+    #submit:hover {
+        cursor: pointer;
+        background-color: #d59eff;
+    }
+
+#homeButton {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+    #homeButton img {
+        width: 100%;
+        height: fit-content;
+        scale: 1.5;
+        vertical-align: middle;
+    }
+
+#popup {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e8bcf0;
+    width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3mm;
+    padding: 30px;
+    box-sizing: border-box;
+    visibility: hidden;
+}
+#popup img {
+    width: 40px;
+}
+#okButton {
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #7600bc;
+    color: #7600bc;
+    border-radius: 6px;
+    text-align: center;
+    padding: 10px;
+    width: 100px;
+    font-size: 20px;
+}
+
+#okButton:hover {
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 2px solid #7600bc;
+    color: #7600bc;
+    text-align: center;
+    cursor: pointer;
+  }
